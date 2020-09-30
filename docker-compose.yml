@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+
+  reactjs:
+    build: ./imageReact
+    volumes:
+      - ./tp-versioning:/project
+    ports:
+      - 3000:3000
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
